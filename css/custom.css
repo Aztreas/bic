@@ -2,15 +2,20 @@
   position: absolute;
   top: 0px;
   left: 0px;
+  bottom: 0px;
   height: 100%;
   width: 100%;
   overflow: hidden;
+
 }
 video {
-  position: absolute;
-  z-index: 0;
-  opacity: 0.6;
-  width: 100%;
+
+   position: absolute;
+   z-index: 0;
+   opacity: 0.6;
+   width: 100%;
+   background-size: cover;
+
 }
 
 header.masthead {
@@ -105,3 +110,6 @@ header.masthead .post-heading .meta {
 header.masthead .post-heading .meta a {
   color: #fff;
 }
+ section {
+   background-color: #fffffff;
+ }
