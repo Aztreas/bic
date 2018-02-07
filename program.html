@@ -81,13 +81,77 @@
     <section id="services">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
+          <div class="col-lg-12 text-left">
             <h2 class="section-heading text-uppercase">How It Works</h2>
-            <p>The Berkeley Investment Conference is divided into 3 rounds.</p>
+            <p>Coming soon</p>
             <h2 class="section-heading text-uppercase">Schedule</h2>
           </div>
         </div>
-    </section>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'Friday')">Friday</button>
+          <button class="tablinks" onclick="openCity(event, 'Saturday')">Saturday</button>
+          <button class="tablinks" onclick="openCity(event, 'Pods')">Pod Assignments</button>
+        </div>
+
+        <div id="Friday" class="tabcontent">
+          <h3>Coming soon</h3> <!--
+          <table style="width:100%">
+            <tr>
+              <th>Event</th>
+              <th>Time</th>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+          </table> -->
+        </div>
+
+        <div id="Saturday" class="tabcontent">
+          <h3>Coming soon</h3><!--
+          <table style="width:100%">
+            <tr>
+              <th>Event</th>
+              <th>Time</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+            </tr>
+          </table> -->
+        </div>
+
+        <div id="Pods" class="tabcontent">
+          <h3>Coming soon</h3> <!--
+          <table style="width:100%">
+            <tr>
+              <th>Room</th>
+              <th>Room</th>
+              <th>Room</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+            </tr>
+          </table> -->
+      </section>
+        </div>
+
+        <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+
+
 
     <!-- What we offer icons and blurb -->
     <!--
