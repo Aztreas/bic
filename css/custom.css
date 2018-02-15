@@ -1,10 +1,13 @@
 .video-container {
+  background-color: white;
   position: absolute;
   top: 0px;
   bottom: 0px;
   height: 100%;
   width: 100%;
   overflow: hidden;
+  animation-name: intro;
+  animation-duration: 6s;
 
 
 }
@@ -21,4 +24,9 @@ video {
    left: 50%;
    transform: translate(-50%,-50%);
 
+}
+
+@keyframes intro {
+   from {opacity: 1;}
+   to {opacity: 0;}
 }
